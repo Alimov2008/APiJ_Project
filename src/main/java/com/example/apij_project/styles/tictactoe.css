@@ -1,0 +1,13 @@
+.ttt-root {
+    -fx-background-color: linear-gradient(to bottom, #181818, #0f0f0f);
+}
+
+.score-bar {
+    -fx-padding: 20;
+}
+
+.score-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #f7f7f7;
+    -fx-font-weight: bold;
+}

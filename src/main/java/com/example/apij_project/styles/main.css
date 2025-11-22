@@ -1,34 +1,32 @@
-.root {
-    -fx-font-family: "Segoe UI", sans-serif;
-    -fx-background-color: linear-gradient(to bottom, #202020, #111);
-    -fx-padding: 20;
+.start-root {
+    -fx-background-color: linear-gradient(to bottom, #1f1f1f, #151515);
+    -fx-padding: 40;
+    -fx-alignment: center;
 }
 
-/* ALL BUTTONS */
-.button {
-    -fx-background-color: #333;
-    -fx-text-fill: white;
-    -fx-font-size: 15px;
-    -fx-background-radius: 5;
-    -fx-cursor: hand;
-}
-
-.button:hover {
-    -fx-background-color: #555;
-}
-
-.button:pressed {
-    -fx-background-color: #222;
-}
-
-/* LABELS */
-.label {
-    -fx-text-fill: white;
-    -fx-font-size: 19px;
-}
-
-/* TITLE LABELS */
-.title {
-    -fx-font-size: 26px;
+.title-label {
+    -fx-font-size: 36px;
     -fx-font-weight: bold;
+    -fx-text-fill: #f0f0f0;
+    -fx-padding: 10 0 20 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 12, 0.2, 0, 3);
+}
+
+.primary-button {
+    -fx-font-size: 22px;
+    -fx-padding: 14 30;
+    -fx-background-color: #2a7ade;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 10, 0.2, 0, 3);
+}
+
+.primary-button:hover {
+    -fx-background-color: #5295ef;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #1f5fb8;
 }
