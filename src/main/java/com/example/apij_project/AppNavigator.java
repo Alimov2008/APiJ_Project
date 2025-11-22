@@ -13,7 +13,7 @@ public class AppNavigator {
 
     public static void switchScene(String fxmlFile) {
         try {
-            FXMLLoader loader = new FXMLLoader(AppNavigator.class.getResource("views/" + fxmlFile));
+            FXMLLoader loader = new FXMLLoader(AppNavigator.class.getResource("/com/example/apij_project/views/" + fxmlFile));
             Scene scene = new Scene(loader.load());
             mainStage.setScene(scene);
             mainStage.show();

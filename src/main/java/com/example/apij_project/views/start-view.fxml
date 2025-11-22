@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
 
-<Button text="Start" onAction="#startGame" />
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.apij_project.controllers.StartController"
+      alignment="CENTER"
+      spacing="20"
+      style="-fx-padding: 30;">
+
+    <Button text="Start" onAction="#startGame"
+            style="-fx-font-size: 20; -fx-padding: 10 20;" />
+</VBox>

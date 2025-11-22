@@ -11,6 +11,7 @@ module com.example.apij_project {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
+    opens com.example.apij_project.controllers to javafx.fxml;
     opens com.example.apij_project to javafx.fxml;
     exports com.example.apij_project;
 }

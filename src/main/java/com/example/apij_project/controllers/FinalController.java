@@ -10,9 +10,12 @@ public class FinalController {
 
     @FXML
     public void initialize() {
+        if (resultLabel == null) {
+            System.err.println("resultLabel was not injected! Check final-view.fxml");
+            return;
+        }
         int score = ScoreManager.getScore();
         int total = ScoreManager.getTotalLevels();
-
         if (score >= total * 0.6) {
             resultLabel.setText("Victory! Your score: " + score);
         } else {
