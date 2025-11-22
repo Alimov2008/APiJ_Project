@@ -66,3 +66,17 @@ public class TicTacToeController {
             drawGame();
         }
     }
+
+    private void aiMove() {
+        List<Button> free = new ArrayList<>();
+        for (Button[] row : grid) {
+            for (Button b : row) {
+                if (b.getText().isEmpty()) free.add(b);
+            }
+        }
+
+        if (free.isEmpty()) return;
+
+        Button choice = free.get(new Random().nextInt(free.size()));
+        choice.setText("O");
+    }
