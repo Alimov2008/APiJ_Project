@@ -15,6 +15,9 @@ public class AppNavigator {
         try {
             FXMLLoader loader = new FXMLLoader(AppNavigator.class.getResource("/com/example/apij_project/views/" + fxmlFile));
             Scene scene = new Scene(loader.load());
+            scene.getStylesheets().add(
+                    AppNavigator.class.getResource("/com/example/apij_project/styles/main.css").toExternalForm()
+            );
             mainStage.setScene(scene);
             mainStage.show();
         } catch (Exception e) {
