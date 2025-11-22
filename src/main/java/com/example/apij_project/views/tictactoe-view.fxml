@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.apij_project.controllers.TicTacToeController">
+
+    <top>
+        <Label fx:id="scoreLbl"
+               text="Score: 0"
+               BorderPane.alignment="CENTER"
+               style="-fx-font-size: 20; -fx-padding: 10;" />
+    </top>
+
+
+</BorderPane>
