@@ -80,3 +80,32 @@ public class TicTacToeController {
         Button choice = free.get(new Random().nextInt(free.size()));
         choice.setText("O");
     }
+
+    private boolean checkWin(String p) {
+        // rows
+        for (int r = 0; r < 3; r++)
+            if (grid[r][0].getText().equals(p) &&
+                    grid[r][1].getText().equals(p) &&
+                    grid[r][2].getText().equals(p))
+                return true;
+
+        // cols
+        for (int c = 0; c < 3; c++)
+            if (grid[0][c].getText().equals(p) &&
+                    grid[1][c].getText().equals(p) &&
+                    grid[2][c].getText().equals(p))
+                return true;
+
+        // diagonals
+        if (grid[0][0].getText().equals(p) &&
+                grid[1][1].getText().equals(p) &&
+                grid[2][2].getText().equals(p))
+            return true;
+
+        if (grid[0][2].getText().equals(p) &&
+                grid[1][1].getText().equals(p) &&
+                grid[2][0].getText().equals(p))
+            return true;
+
+        return false;
+    }
