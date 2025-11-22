@@ -109,3 +109,22 @@ public class TicTacToeController {
 
         return false;
     }
+
+    private void winGame() {
+        finished = true;
+        statusLbl.setText("You Win!");
+        ScoreManager.addPoint();
+        nextButton.setVisible(true);
+    }
+
+    private void loseGame() {
+        finished = true;
+        statusLbl.setText("You Lose!");
+        nextButton.setVisible(true);
+    }
+
+    private void drawGame() {
+        finished = true;
+        statusLbl.setText("Draw!");
+        nextButton.setVisible(true);
+    }
