@@ -3,7 +3,7 @@ package com.example.apij_project.logic;
 public class ScoreManager {
     private static int score = 0;
     private static int currentLevel = 0;
-    private static final int TOTAL_LEVELS = 5;
+    private static final int TOTAL_LEVELS = 10;
 
     public static void addPoint() {
         score++;

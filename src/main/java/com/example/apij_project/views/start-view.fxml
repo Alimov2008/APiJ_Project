@@ -11,7 +11,7 @@
       spacing="24"
       styleClass="start-root">
 
-    <Label text="Tic Tac Toe"
+    <Label text="Do you want to play a game ?"
            styleClass="title-label" />
 
     <Button text="Start Game"
