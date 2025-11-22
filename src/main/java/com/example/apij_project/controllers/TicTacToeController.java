@@ -34,3 +34,35 @@ public class TicTacToeController {
                 { btn20, btn21, btn22 }
         };
     }
+
+    @FXML
+    public void playerMove(javafx.event.ActionEvent e) {
+        if (finished) return;
+
+        Button btn = (Button) e.getSource();
+
+        if (!btn.getText().isEmpty()) return; // already used
+
+        btn.setText("X"); // Player move
+
+        if (checkWin("X")) {
+            winGame();
+            return;
+        }
+
+        if (boardFull()) {
+            drawGame();
+            return;
+        }
+
+        aiMove(); // computer plays
+
+        if (checkWin("O")) {
+            loseGame();
+            return;
+        }
+
+        if (boardFull()) {
+            drawGame();
+        }
+    }
