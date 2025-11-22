@@ -128,3 +128,15 @@ public class TicTacToeController {
         statusLbl.setText("Draw!");
         nextButton.setVisible(true);
     }
+
+    @FXML
+    public void goNext() {
+        ScoreManager.nextLevel();
+        AppNavigator.switchScene("final-view.fxml");
+//        if (ScoreManager.isGameOver()) {
+//            AppNavigator.switchScene("final-view.fxml");
+//        } else {
+//            AppNavigator.switchScene("minigame2-view.fxml"); // or next game
+//        }
+    }
+}
