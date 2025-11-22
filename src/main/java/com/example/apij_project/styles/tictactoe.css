@@ -11,3 +11,62 @@
     -fx-text-fill: #f7f7f7;
     -fx-font-weight: bold;
 }
+
+.board-grid {
+    -fx-padding: 30;
+}
+
+.ttt-button {
+    -fx-pref-width: 110;
+    -fx-pref-height: 110;
+    -fx-font-size: 38px;
+    -fx-text-fill: #e8e8e8;
+
+    -fx-background-color: #1e1e1e;
+    -fx-background-radius: 10;
+    -fx-border-color: #3a3a3a;
+    -fx-border-width: 3;
+    -fx-border-radius: 10;
+
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 10, 0.2, 0, 2);
+}
+
+.ttt-button:hover {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #5f8aff;
+}
+
+.ttt-button:pressed {
+    -fx-background-color: #101010;
+    -fx-border-color: #3d6bff;
+}
+
+.bottom-panel {
+    -fx-padding: 20 0 30 0;
+}
+
+.status-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #fafafa;
+}
+
+.next-button {
+    -fx-font-size: 20px;
+    -fx-padding: 10 25;
+    -fx-background-color: #2a7ade;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.next-button:hover {
+    -fx-background-color: #4c92f0;
+}
+
+.next-button:pressed {
+    -fx-background-color: #1d5fb9;
+}
