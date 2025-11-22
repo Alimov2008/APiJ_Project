@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.apij_project.controllers.FinalController"
+      alignment="CENTER"
+      spacing="25"
+      styleClass="final-root">
+
+    <Label fx:id="resultLabel"
+           styleClass="final-title"/>
+
+    <Button text="Play Again"
+            onAction="#restartGame"
+            styleClass="primary-button"/>
+
+    <Button text="Exit"
+            onAction="#exitGame"
+            styleClass="secondary-button"/>
+
+</VBox>
