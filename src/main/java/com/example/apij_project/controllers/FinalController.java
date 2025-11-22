@@ -17,9 +17,9 @@ public class FinalController {
         int score = ScoreManager.getScore();
         int total = ScoreManager.getTotalLevels();
         if (score >= total * 0.6) {
-            resultLabel.setText("Do'st! Your score: " + score);
+            resultLabel.setText("Do'st !");
         } else {
-            resultLabel.setText("Dushman! Score: " + score);
+            resultLabel.setText("Dushman !");
         }
     }
 }
