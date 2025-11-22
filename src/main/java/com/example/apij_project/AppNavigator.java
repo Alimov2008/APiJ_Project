@@ -10,4 +10,15 @@ public class AppNavigator {
     public static void setStage(Stage stage) {
         mainStage = stage;
     }
+
+    public static void switchScene(String fxmlFile) {
+        try {
+            FXMLLoader loader = new FXMLLoader(AppNavigator.class.getResource("views/" + fxmlFile));
+            Scene scene = new Scene(loader.load());
+            mainStage.setScene(scene);
+            mainStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
