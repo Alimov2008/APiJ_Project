@@ -1,8 +1,10 @@
 package com.example.apij_project.controllers;
 
 import com.example.apij_project.logic.ScoreManager;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import com.example.apij_project.AppNavigator;
 
 public class FinalController {
 
@@ -22,4 +24,7 @@ public class FinalController {
             resultLabel.setText("Dushman !");
         }
     }
+
+    public void restartGame() { AppNavigator.switchScene("start-view.fxml"); }
+    public void exitGame() { Platform.exit(); }
 }
