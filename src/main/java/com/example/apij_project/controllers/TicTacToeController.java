@@ -110,6 +110,13 @@ public class TicTacToeController {
         return false;
     }
 
+    private boolean boardFull() {
+        for (Button[] row : grid)
+            for (Button b : row)
+                if (b.getText().isEmpty()) return false;
+        return true;
+    }
+
     private void winGame() {
         finished = true;
         statusLbl.setText("You Win!");
