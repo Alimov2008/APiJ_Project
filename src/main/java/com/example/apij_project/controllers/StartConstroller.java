@@ -1,7 +1,7 @@
 package com.example.apij_project.controllers;
 
-import com.example.game.AppNavigator;
-import com.example.game.logic.ScoreManager;
+import com.example.apij_project.AppNavigator;
+import com.example.apij_project.logic.ScoreManager;
 
 public class StartConstroller {
     public void startGame() {
